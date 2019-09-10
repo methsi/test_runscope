@@ -1,0 +1,44 @@
+{
+  "trigger_url": "https://api.runscope.com/radar/5a2a6c10-0a0d-4875-b065-df70131a4a33/trigger", 
+  "name": "Test 2", 
+  "version": "1.0", 
+  "exported_at": 1568085324, 
+  "steps": [
+    {
+      "skipped": false, 
+      "headers": {}, 
+      "url": "http://dummy.restapiexample.com/api/v1/employee/2", 
+      "variables": [], 
+      "args": {}, 
+      "step_type": "request", 
+      "auth": {}, 
+      "multipart_form": [], 
+      "note": "", 
+      "fragment": "", 
+      "assertions": [
+        {
+          "comparison": "equal_number", 
+          "value": 200, 
+          "source": "response_status"
+        }, 
+        {
+          "comparison": "equal", 
+          "value": "false", 
+          "source": "response_text"
+        }, 
+        {
+          "comparison": "is_less_than_or_equal", 
+          "value": "450", 
+          "source": "response_time"
+        }
+      ], 
+      "scripts": [
+        ""
+      ], 
+      "before_scripts": [], 
+      "data": "", 
+      "method": "GET"
+    }
+  ], 
+  "description": ""
+}
